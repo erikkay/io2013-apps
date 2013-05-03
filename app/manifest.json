@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Apps IO 2013",
+  "description": "Chrome Packaged Apps State of the Nation - Google I/O 2013",
+  "version": "0.1",
+  "app": {
+    "background": {
+      "scripts": ["js/main.js"]
+    }
+  },
+  "icons": {
+    "16": "images/google_developers_logo_16.png",
+    "128": "images/google_developers_icon_128.png"
+  },
+  "permissions": [
+    "experimental",
+    "storage"
+  ]
+}
