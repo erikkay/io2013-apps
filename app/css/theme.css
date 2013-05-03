@@ -1487,84 +1487,85 @@ aside.gdbar img {
   pre, code {
     font-family: monospace !important;
   }
-  
-  #slide-lastyear {
-    background: url(../../images/.png) no-repeat 0 0;
-  }
-
-  #slide-today {
-    background: url(../../images/.png) no-repeat 0 0;
-  }
-
-  #slide-immersive {
-    background: url(../../images/.png) no-repeat 0 0;
-  }
-
-  #slide-capabilities {
-    background: url(../../images/.png) no-repeat 0 0;
-  }
-
-  #slide-offline {
-    background: url(../../images/.png) no-repeat 0 0;
-  }
-
-  #slide-cloud {
-    background: url(../../images/.png) no-repeat 0 0;
-  }
-
-  #slide-cros {
-    background: url(../../images/.png) no-repeat 0 0;
-  }
-
-  #slide-xplatform {
-    background: url(../../images/.png) no-repeat 0 0;
-  }
-
-  #slide-mobile {
-    background: url(../../images/.png) no-repeat 0 0;
-  }
-
-  #slide-development {
-    background: url(../../images/.png) no-repeat 0 0;
-  }
-
-  #slide-monetization {
-    background: url(../../images/.png) no-repeat 0 0;
-  }
-
-  #slide-distribution {
-    background: url(../../images/.png) no-repeat 0 0;
-  }
-
-  #slide-usecase-cros {
-    background: url(../../images/.png) no-repeat 0 0;
-  }
-
-  #slide-usecase-xplatform {
-    background: url(../../images/.png) no-repeat 0 0;
-  }
-
-  #slide-usecase-device {
-    background: url(../../images/.png) no-repeat 0 0;
-  }
-
-  #slide-usecase-website {
-    background: url(../../images/.png) no-repeat 0 0;
-  }
-
-  #slide-usecase-game {
-    background: url(../../images/.png) no-repeat 0 0;
-  }
-
-  #slide-uitoolkit {
-    background: url(../../images/.png) no-repeat 0 0;
-  }
-
-  #slide-roadmap {
-    background: url(../../images/.png) no-repeat 0 0;
-  }
-
-  #slide-conclusion {
-    background: url(../../images/.png) no-repeat 0 0;
-  }
 }
+
+#slide-lastyear {
+  background: url(../images/lastyear.jpg) no-repeat 0 40%;
+}
+
+#slide-today {
+  background: url(../../images/.png) no-repeat 0 0;
+}
+
+#slide-immersive {
+  background: url(../../images/.png) no-repeat 0 0;
+}
+
+#slide-capabilities {
+  background: url(../../images/.png) no-repeat 0 0;
+}
+
+#slide-offline {
+  background: url(../../images/.png) no-repeat 0 0;
+}
+
+#slide-cloud {
+  background: url(../../images/.png) no-repeat 0 0;
+}
+
+#slide-cros {
+  background: url(../../images/.png) no-repeat 0 0;
+}
+
+#slide-xplatform {
+  background: url(../../images/.png) no-repeat 0 0;
+}
+
+#slide-mobile {
+  background: url(../../images/.png) no-repeat 0 0;
+}
+
+#slide-development {
+  background: url(../../images/.png) no-repeat 0 0;
+}
+
+#slide-monetization {
+  background: url(../../images/.png) no-repeat 0 0;
+}
+
+#slide-distribution {
+  background: url(../../images/.png) no-repeat 0 0;
+}
+
+#slide-usecase-cros {
+  background: url(../../images/.png) no-repeat 0 0;
+}
+
+#slide-usecase-xplatform {
+  background: url(../../images/.png) no-repeat 0 0;
+}
+
+#slide-usecase-device {
+  background: url(../../images/.png) no-repeat 0 0;
+}
+
+#slide-usecase-website {
+  background: url(../../images/.png) no-repeat 0 0;
+}
+
+#slide-usecase-game {
+  background: url(../../images/.png) no-repeat 0 0;
+}
+
+#slide-uitoolkit {
+  background: url(../../images/.png) no-repeat 0 0;
+}
+
+#slide-roadmap {
+  background: url(../../images/.png) no-repeat 0 0;
+}
+
+#slide-conclusion {
+  background: url(../../images/.png) no-repeat 0 0;
+}
+
