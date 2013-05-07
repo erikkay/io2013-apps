@@ -21,10 +21,12 @@ SlideController.prototype.onMessage_ = function(e) {
   // Restrict messages to being from this origin. Allow local developmet
   // from file:// though.
   // TODO: It would be dope if FF implemented location.origin!
-  if (e.origin != ORIGIN_ && ORIGIN_.indexOf('file://') != 0) {
-    alert('Someone tried to postMessage from an unknown origin');
-    return;
-  }
+  // TODO(rpaquay): Remove this check as we need to get allow messages
+  //   from the adview demo sdk (running google drive).
+  //if (e.origin != ORIGIN_ && ORIGIN_.indexOf('file://') != 0) {
+  //  alert('Someone tried to postMessage from an unknown origin');
+  //  return;
+  //}
 
   // if (e.source.location.hostname != 'localhost') {
   //   alert('Someone tried to postMessage from an unknown origin');
