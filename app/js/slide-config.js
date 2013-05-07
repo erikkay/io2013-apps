@@ -16,7 +16,6 @@ var SLIDE_CONFIG = {
   // Author information
   presenters: [{
     name: 'Erik Kay',
-    company: 'Engineering Manager',
     gplus: 'https://plus.google.com/106818816637347055983',
     github: 'http://github.com/erikkay'
   }]

@@ -1,4 +1,4 @@
-var PRESENTATION_WIDTH = 400;
+var PRESENTATION_WIDTH = 500;
 var PRESENTATION_HEIGHT = screen.availHeight;
 
 var presentationWindow;
