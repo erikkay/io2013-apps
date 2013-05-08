@@ -207,7 +207,7 @@ SlideDeck.prototype.loadConfig_ = function(config) {
   }
 
   if (settings.title) {
-    document.title = settings.title.replace(/<br\/?>/, ' ') + ' - Google IO 2012';
+    document.title = settings.title.replace(/<br\/?>/, ' ') + ' - Google IO 2013';
     document.querySelector('[data-config-title]').innerHTML = settings.title;
   }
 
@@ -223,7 +223,7 @@ SlideDeck.prototype.loadConfig_ = function(config) {
     if (presenters.length == 1) {
       var p = presenters[0];
 
-      html = [p.name, p.company].join('<br>');
+      html = [p.name, p.company].join(' - ');
 
       var gplus = p.gplus ? '<span>g+</span><a href="' + p.gplus +
           '">' + p.gplus.replace(/https?:\/\//, '') + '</a>' : '';

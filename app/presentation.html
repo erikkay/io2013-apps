@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Google IO 2012</title>
+  <title>Chrome Apps - Google IO 2013</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/theme.css">
   <link rel="stylesheet" href="css/presentation.css">
+  <link rel="stylesheet" href="css/slides.css">
 </head>
 <body style="opacity: 0">
 
 <!-- removed class="layout-widescreen" since we're using a chromebook -->
 <slides>
 
-  <slide class="logoslide nobackground">
-    <article class="chromelogo">
-      <img src="images/chrome_logo.png"><div id="chrometext">chrome</div>
-    </article>
-  </slide>
-
-  <slide class="nobackground">
-    <hgroup class="auto-fadein">
+  <slide id="slide-title" class="dark">
+    <hgroup>
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <br>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <br>
       <h3 data-config-presenter><!-- populated from slide_config.json --></h3>
     </hgroup>
+    <footer class="chromelogo">
+      <img src="images/chrome_logo.png"><div id="chrometext">chrome</div>
+    </footer>
   </slide>
 
   <slide id="slide-lastyear">
@@ -62,7 +61,7 @@
     </hgroup>
   </slide>
 
-  <slide id="slide-cros">
+  <slide id="slide-cros" class="dark">
     <hgroup>
       <h2>Chrome OS</h2>
     </hgroup>
@@ -86,25 +85,33 @@
     </hgroup>
   </slide>
 
-  <slide id="slide-monetization">
-    <hgroup>
-      <h2>Monetization</h2>
-      <h3>Google Wallet</h3>
-      <input id="buy-star" type="button" value="Buy a gold star!"/>
-      <div id="payment-result"></div>
-    </hgroup>
-  </slide>
-
   <slide id="slide-distribution">
     <hgroup>
       <h2>Distribution</h2>
     </hgroup>
   </slide>
 
+  <slide id="slide-monetization">
+    <hgroup>
+      <h2>Monetization</h2>
+    </hgroup>
+    <article>
+      <input id="buy-star" type="button" value="Buy a gold star!"/>
+      <div id="payment-result"></div>
+    </article>
+  </slide>
+
   <slide id="slide-usecase-cros">
     <hgroup>
       <h2>Use Case:</h2>
       <h2>Chrome OS</h2>
+    </hgroup>
+  </slide>
+
+  <slide id="slide-usecase-kiosk" class="dark">
+    <hgroup>
+      <h2>Use Case:</h2>
+      <h2>Kiosk</h2>
     </hgroup>
   </slide>
 
@@ -115,46 +122,58 @@
     </hgroup>
   </slide>
 
-  <slide id="slide-usecase-device-app">
+  <slide id="slide-usecase-device">
     <hgroup>
       <h2>Use Case:</h2>
       <h2>Device App</h2>
     </hgroup>
   </slide>
 
-  <slide id="slide-usecase-website">
+  <slide id="slide-usecase-website" class="dark">
     <hgroup>
       <h2>Use Case:</h2>
       <h2>Website++</h2>
     </hgroup>
   </slide>
 
-  <slide id="slide-usecase-games">
+  <slide id="slide-usecase-game">
     <hgroup>
       <h2>Use Case:</h2>
-      <h2>Games</h2>
+      <h2>Game</h2>
     </hgroup>
   </slide>
 
-  <slide id="slide-uitoolkit">
-    <hgroup>
-      <h2>UI Toolkit</h2>
-    </hgroup>
-  </slide>
-
-  <slide id="slide-roadmap">
+  <slide id="slide-roadmap" class="xdark">
     <hgroup>
       <h2>Roadmap</h2>
     </hgroup>
+    <article>
+      <ul class="build">
+        <li>Chrome 28 - Win, ChromeOS</li>
+        <li>Chrome 29 - Mac</li>
+        <li>Developer tools</li>
+        <li>Monetization</li>
+        <li>Performance, Polish, APIs</li>
+      </ul>
+    </article>
   </slide>
 
   <slide id="slide-conclusion">
     <hgroup>
       <h2>Conclusion</h2>
     </hgroup>
+    <article>
+      <ul class="build">
+        <li>Now</li>
+        <li>Immersive</li>
+        <li>Capabilities</li>
+        <li>Offline</li>
+        <li>Cloud</li>
+      </ul>
+    </article>
   </slide>
 
-  <slide class=" dark nobackground">
+  <slide class="dark nobackground">
     <hgroup>
       <h2>Thank You!</h2>
       <h4>developer.chrome.com/apps</h4>

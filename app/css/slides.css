@@ -1,0 +1,110 @@
+slide {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#slide-title h1 {
+  font-size: 1.4em;
+}
+
+#slide-title footer {
+  position: absolute;
+  bottom: 20px;
+}
+
+footer.chromelogo {
+  height: 100px;
+  display: block;
+}
+
+#slide-lastyear {
+  background-image: url(../images/lastyear.jpg);
+}
+
+#slide-today {
+  background-image: url(../images/today.jpg);
+}
+
+#slide-immersive {
+  background-image: url(../images/immersive.jpg);
+}
+
+#slide-capabilities {
+  background-image: url(../images/capabilities.jpg);
+}
+
+#slide-offline {
+  background-image: url(../images/offline.jpg);
+}
+
+#slide-cloud {
+  background-image: url(../images/cloud.jpg);
+}
+
+#slide-cros {
+  background-image: url(../images/cros.jpg);
+}
+
+#slide-xplatform {
+  background-image: url(../images/xplatform.jpg);
+}
+
+#slide-mobile {
+  background-image: url(../images/mobile.jpg);
+}
+
+#slide-development {
+  background-image: url(../images/development.jpg);
+}
+
+#slide-monetization {
+  background-image: url(../images/monetization.jpg);
+}
+
+#slide-distribution {
+  background-image: url(../images/distribution.jpg);
+}
+
+#slide-usecase-cros {
+  background-image: url(../images/chrome.svg);
+}
+
+#slide-usecase-kiosk {
+  background-image: url(../images/kiosk.jpg);
+}
+
+#slide-usecase-xplatform {
+  background-image: url(../images/xplatform.jpg);
+}
+
+#slide-usecase-device {
+  background-image: url(../images/usecase-device.jpg);
+}
+
+#slide-usecase-website {
+  background-image: url(../images/usecase-website.jpg);
+}
+
+#slide-usecase-game {
+  background-image: url(../images/usecase-game.jpg);
+}
+
+#xslide-roadmap {
+  background-image: url(../images/roadmap.jpg);
+}
+
+#slide-conclusion {
+  background-image: url(../images/conclusion.jpg);
+  background-position: bottom;
+  background-size: 100%;
+}
+
+#slide-conclusion ul {
+  padding-left: 20px; 
+}
+
+#slide-conclusion li {
+  font-size: 1.5em;
+}
+

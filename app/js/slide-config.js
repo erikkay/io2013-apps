@@ -1,7 +1,7 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Chrome Packaged Apps',
+    title: 'Chrome Apps',
     subtitle: 'State of the Nation',
     useBuilds: true, // Default: true. False will turn off slide animation builds.
     enableSlideAreas: false, // Default: true. False turns off the click areas on either slide of the slides.
@@ -16,6 +16,8 @@ var SLIDE_CONFIG = {
   // Author information
   presenters: [{
     name: 'Erik Kay',
+    company: "Google",
+    jobtitle: "Engineering Director",
     gplus: 'https://plus.google.com/106818816637347055983',
     github: 'http://github.com/erikkay'
   }]

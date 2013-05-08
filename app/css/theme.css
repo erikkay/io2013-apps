@@ -34,7 +34,6 @@ slide hgroup h2 {
   font-size: 60px;
   text-shadow: 0px 0px 20px gray;
   color: black;
-  xbackground-color: lightgray;
 }
 
 /* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
@@ -94,14 +93,9 @@ body {
   width: 100%;
   overflow: hidden;
   color: #fff;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -ms-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
+  -xwebkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   -webkit-transition: opacity 800ms ease-in 100ms;
-  -moz-transition: opacity 800ms ease-in 100ms;
-  -ms-transition: opacity 800ms ease-in 100ms;
-  -o-transition: opacity 800ms ease-in 100ms;
   transition: opacity 800ms ease-in 100ms;
 }
 /* line 69, ../scss/_base.scss */
@@ -127,18 +121,12 @@ slides {
   left: 0;
   top: 0;
   -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   -webkit-perspective: 1000;
   perspective: 1000;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-transition: opacity 800ms ease-in 100ms;
-  -moz-transition: opacity 800ms ease-in 100ms;
-  -ms-transition: opacity 800ms ease-in 100ms;
-  -o-transition: opacity 800ms ease-in 100ms;
   transition: opacity 800ms ease-in 100ms;
 }
 
@@ -150,41 +138,9 @@ slides > slide {
   left: 0%;
   top: 0%;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* Slide styles */
-/*article.fill iframe {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-
-  border: 0;
-  margin: 0;
-
-  @include border-radius(10px);
-
-  z-index: -1;
-}
-
-slide.fill {
-  background-repeat: no-repeat;
-  @include background-size(cover);
-}
-
-slide.fill img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  min-width: 100%;
-  min-height: 100%;
-
-  z-index: -1;
-}
-*/
 /**
  * Theme Styles
  */
@@ -210,7 +166,6 @@ slide.fill img {
   min-height: 28px;
   padding: 100px 0 0;
   -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.07);
-  -moz-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.07);
   box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.07);
   border-width: 1px 1px 1px 6px;
 }
@@ -297,11 +252,11 @@ slides > slide.far-next {
 }
 /* line 163, ../scss/default.scss */
 slides > slide.dark {
-  background: #515151 !important;
+  background-color: #515151 !important;
 }
 
 slide.dark h2 {
-  color: white;
+  color: #eeeeee;
 }
 
 /* line 194, ../scss/default.scss */
@@ -1474,91 +1429,5 @@ aside.gdbar img {
   pre, code {
     font-family: monospace !important;
   }
-}
-
-slide {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#slide-lastyear {
-  background-image: url(../images/lastyear.jpg);
-}
-
-#slide-today {
-  background-image: url(../images/today.jpg);
-}
-
-#slide-immersive {
-  background-image: url(../images/immersive.jpg);
-}
-
-#slide-capabilities {
-  background-image: url(../images/capabilities.jpg);
-}
-
-#slide-offline {
-  background-image: url(../images/offline.jpg);
-}
-
-#slide-cloud {
-  background-image: url(../images/cloud.jpg);
-}
-
-#slide-cros {
-  background-image: url(../images/cros.jpg);
-}
-
-#slide-xplatform {
-  background-image: url(../images/xplatform.jpg);
-}
-
-#slide-mobile {
-  background-image: url(../images/mobile.jpg);
-}
-
-#slide-development {
-  background-image: url(../images/.jpg);
-}
-
-#slide-monetization {
-  background-image: url(../images/.jpg);
-}
-
-#slide-distribution {
-  background-image: url(../images/.jpg);
-}
-
-#slide-usecase-cros {
-  background-image: url(../images/.jpg);
-}
-
-#slide-usecase-xplatform {
-  background-image: url(../images/.jpg);
-}
-
-#slide-usecase-device {
-  background-image: url(../images/.jpg);
-}
-
-#slide-usecase-website {
-  background-image: url(../images/.jpg);
-}
-
-#slide-usecase-game {
-  background-image: url(../images/.jpg);
-}
-
-#slide-uitoolkit {
-  background-image: url(../images/.jpg);
-}
-
-#slide-roadmap {
-  background-image: url(../images/.jpg);
-}
-
-#slide-conclusion {
-  background-image: url(../images/.jpg);
 }
 

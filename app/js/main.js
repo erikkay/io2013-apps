@@ -1,4 +1,4 @@
-var PRESENTATION_WIDTH = 500;
+var PRESENTATION_WIDTH = 400;
 var PRESENTATION_HEIGHT = screen.availHeight;
 
 var presentationWindow;
@@ -13,7 +13,7 @@ var createPresentationWindow = function() {
   var left = Math.max((screen.width - PRESENTATION_WIDTH), 0);
   var top = -20;
 
-  chrome.app.window.create('presentation.html?presentme=true', {
+  chrome.app.window.create('presentation.html', {
       //id: "sidebar",
       //singleton: true,
       frame: 'none',
@@ -27,8 +27,6 @@ var createPresentationWindow = function() {
     presentationWindow = w;
   });
 };
-
-console.log("hello world");
 
 chrome.app.runtime.onRestarted.addListener(function() {
   createPresentationWindow();
