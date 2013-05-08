@@ -320,27 +320,23 @@ SlideDeck.prototype.buildNextItem_ = function() {
 };
 
 SlideDeck.prototype.firstSlide = function() {
-  if (this.curSlide_ > 0) {
-    var bodyClassList = document.body.classList;
-    bodyClassList.remove('highlight-code');
+  var bodyClassList = document.body.classList;
+  bodyClassList.remove('highlight-code');
 
-    this.curSlide_ = 0;
-    this.prevSlide_ = 0;
+  this.curSlide_ = 0;
+  this.prevSlide_ = 0;
 
-    this.updateSlides_();
-  }
+  this.updateSlides_();
 };
 
 SlideDeck.prototype.lastSlide = function() {
-  if (this.curSlide_ > 0) {
-    var bodyClassList = document.body.classList;
-    bodyClassList.remove('highlight-code');
+  var bodyClassList = document.body.classList;
+  bodyClassList.remove('highlight-code');
 
-    this.curSlide_ = this.slides.length - 1;
-    this.prevSlide_ = this.curSlide_ - 1;
+  this.curSlide_ = this.slides.length - 1;
+  this.prevSlide_ = this.curSlide_ - 1;
 
-    this.updateSlides_();
-  }
+  this.updateSlides_();
 };
 
 SlideDeck.prototype.prevSlide = function() {

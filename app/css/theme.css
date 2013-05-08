@@ -523,6 +523,7 @@ iframe {
 /* line 418, ../scss/default.scss */
 dt {
   font-weight: bold;
+  padding-top: 20px;
 }
 
 /* line 422, ../scss/default.scss */
