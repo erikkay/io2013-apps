@@ -1,5 +1,5 @@
 (function(window) {
-
+var document = window.document;
 var buttonId = 'buy-star';
 var resultId = 'payment-result';
 
