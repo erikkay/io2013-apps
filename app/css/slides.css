@@ -4,10 +4,6 @@ slide {
   background-size: cover;
 }
 
-#slide-title h1 {
-  font-size: 1.4em;
-}
-
 slide footer {
   position: absolute;
   bottom: 20px;
@@ -16,6 +12,23 @@ slide footer {
 footer.chromelogo {
   height: 100px;
   display: block;
+}
+
+slide ul {
+  padding-left: 20px; 
+}
+
+slide li {
+  font-size: 1.5em;
+}
+
+slide {
+  border-image: radial-gradient(#fff, #000) 40% repeat;
+  border-width: 5px; 
+}
+
+#slide-title h1 {
+  font-size: 1.4em;
 }
 
 #slide-lastyear {
@@ -99,12 +112,3 @@ footer.chromelogo {
   background-position: bottom;
   background-size: 100%;
 }
-
-#slide-conclusion ul {
-  padding-left: 20px; 
-}
-
-#slide-conclusion li {
-  font-size: 1.5em;
-}
-
