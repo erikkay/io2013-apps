@@ -1,6 +1,7 @@
 (function(window) {
-
+var document = window.document;
 var buttonId = 'buy-star';
+var buttonIdProd = 'buy-prod-star';
 var resultId = 'payment-result';
 
 function logResult(result) {
@@ -35,9 +36,31 @@ function makePurchase() {
   });
 }
 
+function makeProdPurchase() {
+  google.payments.inapp.buy({
+    parameters: {env: 'prod'},
+    jwt: 'eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9' +
+         '.eyJhdWQiOiAiR29vZ2xlIiwgImlzcyI6ICIwMjA' +
+         '1NTA5MDM4OTY2NTMxMzk3MSIsICJyZXF1ZXN0Ijo' +
+         'geyJwcmljZSI6ICIzLjAwIiwgImN1cnJlbmN5Q29' +
+         'kZSI6ICJVU0QiLCAic2VsbGVyRGF0YSI6ICJfc2V' +
+         'sbGVyX2RhdGFfIiwgIm5hbWUiOiAiR29sZCBTdGF' +
+         'yIiwgImRlc2NyaXB0aW9uIjogIkEgc2hpbmluZyB' +
+         'iYWRnZSBvZiBkaXN0aW5jdGlvbiJ9LCAiZXhwIjo' +
+         'gMjM2ODIwNzc1NCwgImlhdCI6IDEzNjgyMDc3NTQ' +
+         'sICJ0eXAiOiAiZ29vZ2xlL3BheW1lbnRzL2luYXB' +
+         'wL2l0ZW0vdjEifQ.c69xrbdfiG5pUdkckft0GrOG' +
+         'qt32Xfu1ywS4Wi85uGE',
+    success: onPaymentSuccess,
+    failure: onPaymentFailure
+  });
+}
+
 function onDocumentReady() {
   var button = document.getElementById(buttonId);
   button.addEventListener('click', makePurchase);
+  button = document.getElementById(buttonIdProd);
+  button.addEventListener('click', makeProdPurchase);
 }
 
 document.addEventListener('DOMContentLoaded', onDocumentReady, false);
