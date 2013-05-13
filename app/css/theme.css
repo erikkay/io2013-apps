@@ -252,10 +252,18 @@ slides > slide.far-next {
 }
 /* line 163, ../scss/default.scss */
 slides > slide.dark {
-  background-color: #515151 !important;
+  background-color: rgb(51, 51, 51) !important;
 }
 
-slide.dark h2 {
+slide.dark hgroup h2 {
+  color: #eeeeee;
+}
+
+slide.dark hgroup h3 {
+  color: #eeeeee;
+}
+
+slide.dark {
   color: #eeeeee;
 }
 

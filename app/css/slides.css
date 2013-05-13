@@ -40,7 +40,7 @@ slide {
 }
 
 #slide-immersive {
-  background-image: url(../images/immersive.jpg);
+  background-image: url(../images/immersive2.jpg);
 }
 
 #slide-capabilities {
@@ -48,11 +48,12 @@ slide {
 }
 
 #slide-offline {
-  background-image: url(../images/offline.jpg);
+  background-image: url(../images/offline2.jpg);
+  background-size: 100%;
 }
 
 #slide-cloud {
-  background-image: url(../images/cloud.jpg);
+  background-image: url(../images/cloud2.png);
 }
 
 #slide-cros {
@@ -60,23 +61,27 @@ slide {
 }
 
 #slide-xplatform {
-  background-image: url(../images/xplatform.jpg);
+  background-image: url(../images/xplatform2.jpeg);
+  background-size: 150%;
 }
 
 #slide-mobile {
-  background-image: url(../images/mobile.jpg);
+  background-image: url(../images/mobile2.jpg);
+  background-size: 200%;
+  background-position: -300px center;
 }
 
 #slide-development {
-  background-image: url(../images/development.jpg);
+  background-image: url(../images/development2.jpg);
 }
 
 #slide-monetization {
-  background-image: url(../images/monetization.jpg);
+  background-image: url(../images/monetization3.png);
 }
 
 #slide-distribution {
-  background-image: url(../images/distribution.jpg);
+  background-image: url(../images/cws-structured.png);
+  background-position: -340px -50px;
 }
 
 #slide-usecase-cros {
@@ -88,7 +93,8 @@ slide {
 }
 
 #slide-usecase-xplatform {
-  background-image: url(../images/xplatform.jpg);
+  background-image: url(../images/xplatform2.jpeg);
+  background-size: 150%;
 }
 
 #slide-usecase-device {
@@ -100,7 +106,8 @@ slide {
 }
 
 #slide-usecase-game {
-  background-image: url(../images/usecase-game.jpg);
+  background-image: url(../images/usecase-game2.jpg);
+  background-size: 200%;
 }
 
 #xslide-roadmap {
