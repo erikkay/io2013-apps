@@ -4,6 +4,31 @@ slide {
   background-size: cover;
 }
 
+slide hgroup h1,h2,h3,h4 {
+  text-align: center;
+}
+
+slide hgroup h2 {
+  line-height: 1;
+  font-size: 60px;
+  text-shadow: 0px 5px 1em gray;
+  color: black;
+}
+
+slide.dark hgroup h2 {
+  color: #eeeeee;
+  text-shadow: 0px 5px 1em black;
+  -webkit-text-stroke: .5px gray;
+}
+
+slide.dark hgroup h3 {
+  color: #eeeeee;
+}
+
+slide.dark {
+  color: #eeeeee;
+}
+
 slide footer {
   position: absolute;
   bottom: 20px;
@@ -29,6 +54,10 @@ slide {
 
 #slide-title h1 {
   font-size: 1.4em;
+}
+
+#slide-overview {
+  background-image: url(../images/overview.jpg);
 }
 
 #slide-lastyear {
@@ -89,7 +118,9 @@ slide {
 }
 
 #slide-usecase-kiosk {
-  background-image: url(../images/kiosk.jpg);
+  background-image: url(../images/io-kiosk.png);
+  background-size: 120%;
+  background-position: 0px center;
 }
 
 #slide-usecase-xplatform {

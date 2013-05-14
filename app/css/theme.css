@@ -25,17 +25,6 @@ body {
   line-height: 1;
 }
 
-slide hgroup h1,h2,h3,h4 {
-  text-align: center;
-}
-
-slide hgroup h2 {
-  line-height: 1;
-  font-size: 60px;
-  text-shadow: 0px 0px 20px gray;
-  color: black;
-}
-
 /* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
@@ -253,18 +242,6 @@ slides > slide.far-next {
 /* line 163, ../scss/default.scss */
 slides > slide.dark {
   background-color: rgb(51, 51, 51) !important;
-}
-
-slide.dark hgroup h2 {
-  color: #eeeeee;
-}
-
-slide.dark hgroup h3 {
-  color: #eeeeee;
-}
-
-slide.dark {
-  color: #eeeeee;
 }
 
 /* line 194, ../scss/default.scss */
