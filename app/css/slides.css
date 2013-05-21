@@ -61,7 +61,7 @@ slide {
 }
 
 #slide-lastyear {
-  background-image: url(../images/lastyear.jpg);
+  background-image: url(../images/calendar.jpg);
 }
 
 #slide-today {
@@ -102,15 +102,36 @@ slide {
 
 #slide-development {
   background-image: url(../images/development2.jpg);
+  background-position-x: center;
 }
 
 #slide-monetization {
   background-image: url(../images/monetization3.png);
 }
 
+#buy-star:hover:after {
+  -webkit-text-stroke: 2px black;
+}
+
+#buy-star:after {
+  padding-left: 80px;
+  content: "\2605";
+  font-size: 128px;
+  opacity: 0.3;
+}
+
+.failure#buy-star:after {
+  color: red;
+}
+
+.success#buy-star:after {
+  color: goldenrod;
+  opacity: 1.0;
+}
+
 #slide-distribution {
   background-image: url(../images/cws-structured.png);
-  background-position: -340px -50px;
+  xbackground-position: -340px -50px;
 }
 
 #slide-usecase-cros {
@@ -119,8 +140,8 @@ slide {
 
 #slide-usecase-kiosk {
   background-image: url(../images/io-kiosk.png);
-  background-size: 120%;
-  background-position: 0px center;
+  background-size: 100%;
+  background-position: 0px bottom;
 }
 
 #slide-usecase-xplatform {
@@ -130,6 +151,8 @@ slide {
 
 #slide-usecase-device {
   background-image: url(../images/usecase-device.jpg);
+  background-size: 120%;
+  xbackground-position: bottom;
 }
 
 #slide-usecase-website {

@@ -6,15 +6,15 @@ var resultId = 'payment-result';
 
 function logResult(result) {
   console.log('Payment result: ' + result);
-  document.getElementById(resultId).textContent = result;
+  document.getElementById(buttonId).className = result;
 }
 
 function onPaymentSuccess() {
-  logResult('Success!');
+  logResult('success');
 }
 
 function onPaymentFailure() {
-  logResult('Failure!');
+  logResult('failure');
 }
 
 function makePurchase() {
@@ -59,8 +59,6 @@ function makeProdPurchase() {
 function onDocumentReady() {
   var button = document.getElementById(buttonId);
   button.addEventListener('click', makePurchase);
-  button = document.getElementById(buttonIdProd);
-  button.addEventListener('click', makeProdPurchase);
 }
 
 document.addEventListener('DOMContentLoaded', onDocumentReady, false);

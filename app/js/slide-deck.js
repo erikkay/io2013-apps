@@ -3,8 +3,6 @@
  * @authors Eric Bidelman
  * @fileoverview TODO
  */
-document.cancelFullScreen = document.webkitCancelFullScreen ||
-                            document.mozCancelFullScreen;
 
 /**
  * @constructor
@@ -71,6 +69,18 @@ SlideDeck.prototype.init_ = function(e) {
         window.setTimeout(function() {
           that.toggleOverview();
         }, 500);
+      } else if (slidedeck.slides[slidedeck.curSlide_].id == "slide-immersive") {
+        console.log(e);
+        if (e.detail == 2) {
+          var opt = {
+            type: "image",
+            title: "Chromebook Pixel FTW",
+            message: "I'm doing this presentation on a Pixel!",
+            iconUrl: "/images/google_developers_icon_128.png",
+            imageUrl: "/images/cros.jpg"
+          };
+          chrome.notifications.create("foo", opt, function() {});
+        }
       }
     }, false);
   }
@@ -135,12 +145,24 @@ SlideDeck.prototype.onBodyKeyDown_ = function(e) {
       e.preventDefault();
       break;
 
+    case 70: // F: Toggle full screen
+      if (chrome.app.window.current().isFullscreen()) {
+        document.webkitExitFullscreen();
+      } else {
+        document.body.webkitRequestFullscreen();
+      }
+      break;
+
     case 72: // H: Toggle code highlighting
       document.body.classList.toggle('highlight-code');
       break;
 
     case 79: // O: Toggle overview
       this.toggleOverview();
+      break;
+
+    case 81: // Q: quit
+      chrome.app.window.current().close();
       break;
 
     case 27: // ESC: Hide notes and highlighting
@@ -153,7 +175,7 @@ SlideDeck.prototype.onBodyKeyDown_ = function(e) {
       break;
 
     case 77: // M: Minimize
-      chrome.app.window.minimize();
+      chrome.app.window.current().minimize();
       break;
   }
 };
@@ -445,7 +467,13 @@ SlideDeck.prototype.updateSlides_ = function() {
     this.focusOverview_();
     return;
   }
-
+    
+  if ((this.curSlide_ == this.slides.length - 1) ||
+      (this.curSlide_ == 0)) {
+    document.body.webkitRequestFullscreen();
+  } else {
+    document.webkitExitFullscreen();    
+  }
 };
 
 /**
