@@ -13,6 +13,7 @@
     "128": "images/google_developers_icon_128.png"
   },
   "permissions": [
+    "fullscreen",
     "storage",
     "notifications"
   ]
